@@ -1,0 +1,210 @@
+@keyframes pisca{
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.urna{
+    background-color: #dad5c9;
+    width: 850px;
+    height: 300px;
+    display: flex;
+    padding: 35px;
+}
+
+.tela{
+    position: relative;
+    background-color: #c7c7c7;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.seuVoto{
+    margin: 5px 0 -23px 10px;
+}
+
+.imgPrincipal{
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.imgPrincipal img{
+    width: 100px;
+    height: 120px;
+}
+
+.imgVice{
+    position: absolute;
+    right: -1px;
+    top: 123px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.imgVice img{
+    width: 70px;
+    height: 90px;
+}
+
+.cargo{
+    margin: 48px 0 0 85px;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+}
+
+.votoBranco{
+    display: none;
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 2.2rem;
+}
+
+.numeros{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 20px 40px;
+}
+
+.numVoto{
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.dados{
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.dados span:first-child{
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.dados span:last-child{
+    font-size: 2.2rem;
+    display: flex;
+    margin: 20px 0 0 190px;
+}
+
+.rodape{
+    position: absolute;
+    bottom: 0;
+}
+
+.rodape span{
+    display: block;
+    margin-left: 15px;
+}
+
+.rodape::before{
+    content: '';
+    background-color: black;
+    margin-left: -20;
+    width: 500px;
+    height: 2px;
+    display: block;
+}
+
+.teclado{
+    background-color: #413a39;
+    width: 300px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.linha{
+    display: flex;
+}
+
+.num{
+    margin: 10px;
+    width: 60px;
+    padding: 5px;
+    background-color: black;
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid rgb(80, 79, 79);
+}
+
+.num{
+    cursor: pointer;
+}
+
+.botoes{
+    display: flex;
+    align-items: flex-end;
+}
+
+.botoes button{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+
+#branco{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: white;
+    border: 2px solid rgb(80, 79, 79);
+}
+
+#corrige{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: rgb(255, 115, 0);
+    border: 2px solid rgb(80, 79, 79);
+}
+
+#confirma{
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: green;
+    border: 2px solid rgb(80, 79, 79);
+}
+
+.telaFinal{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
